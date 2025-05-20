@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-100 text-neutral-800; /* Tailwind config の色を使用 */
+  min-height: 100vh;
+  /* display: flex; flex-direction: column; align-items: center; justify-content: center; を削除 */
+}
+
+/* 必要に応じて、html, body に height: 100% を設定することも検討 */
+html, body {
+  height: 100%;
+}
+
+/* page.tsx の <main> 要素が中央揃えを担当するように変更 */
